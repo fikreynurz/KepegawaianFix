@@ -13,7 +13,7 @@ Content-Type: application/json
 ###
 
 GET http://localhost:3000/lembur/ HTTP/1.1
-Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InBha2RvZGljb250b2hAZ21haWwuY29tIiwiaWQiOiI2MTVkNTFjYmU3OTg3MTk2ZGUzZGE3YWQiLCJpYXQiOjE2MzM1NzgyNzN9.4PqJuiKj8FEzZduiEVSlp6ieHNX1MvBD6VLu6yxYHUQ
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImZpa3JleW51cnN5YWJhbmlAZ21haWwuY29tIiwiaWQiOiI2MWExYWNiODg1OWI4OGVmODJiMGQ0YjUiLCJpYXQiOjE2MzgzMzM4MzV9.kYfT1vDKSMtFVwR8-bDVvNQr0uPtkAdC_wrp_GBQfWc
 Content-Type: application/json
 
 ###
