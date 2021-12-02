@@ -118,14 +118,14 @@ exports.sick_patchAccept = async (req, res) => {
         acceptedDate: new Date()
     }
     await Sick.updateOne({_id:id}, {$set: update}, {new:true})
-    const newData = await Sick.findById({_id: id})
+    const newData = await Sick.findById(id)
     const manager = await User.findById(newData.managerId);
     const staff = await User.findById(newData.staffId);
     const {_id, ...result } = newData._doc
+    if(manager)result.managerId = manager.fullName
     result.id = newData._id;
     result.staffId = staff.fullName
-    if(manager)result.managerId = manager.fullName
-    res.send(result)   
+    res.status(200).send(result)   
 }
 
 exports.sick_deleteOne = async (req, res) => {
